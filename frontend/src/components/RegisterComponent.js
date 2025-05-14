@@ -93,28 +93,28 @@ const RegisterComponent = () => {
           </h5>
           <form onSubmit={handleSubmit}>
             {error && <div className="alert alert-danger">{error}</div>}
-<div className="d-flex mb-3">
-  <div className="form-group me-3">
-    <label>Username:</label>
-    <input
-      type="text"
-      className="form-control"
-      value={username}
-      onChange={(e) => setUsername(e.target.value)}
-      required
-    />
-  </div>
-  <div className="form-group">
-    <label>Full Name:</label>
-    <input
-      type="text"
-      className="form-control"
-      value={fullname}
-      onChange={(e) => setFullname(e.target.value)}
-      required
-    />
-  </div>
-</div>
+            <div className="d-flex mb-3">
+              <div className="form-group me-3">
+                <label>Username:</label>
+                <input
+                  type="text"
+                  className="form-control"
+                  value={username}
+                  onChange={(e) => setUsername(e.target.value)}
+                  required
+                />
+              </div>
+              <div className="form-group">
+                <label>Full Name:</label>
+                <input
+                  type="text"
+                  className="form-control"
+                  value={fullname}
+                  onChange={(e) => setFullname(e.target.value)}
+                  required
+                />
+              </div>
+            </div>
 
 
             <div className="form-group mb-3">
